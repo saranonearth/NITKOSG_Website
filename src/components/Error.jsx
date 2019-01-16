@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Error extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
-        return (
-            <div>Home</div>
-          );
+        return ( 
+            <div>
+                Error 404
+            </div>
+         );
     }
 }
  
-export default Home;
+export default Error;
