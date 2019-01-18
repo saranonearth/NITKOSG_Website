@@ -5,24 +5,24 @@ import Members from './components/Members.jsx';
 import Events from './components/Events.jsx';
 import Projects from './components/Projects.jsx';
 import Tutorials from './components/Tutorials.jsx';
-import Error from './components/Error';
-import Navigation from './components/Navigation';
+import Error from './components/Error.jsx';
+import Navigation from './components/Navigation.jsx';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div>
-        <Navigation />
-        <Switch>
-          <Route path="/" component = {Home} exact />
-          <Route path="/members" component = {Members} />
-          <Route path="/events" component = {Events} />
-          <Route path="/projects" component = {Projects} />
-          <Route path="/tutorials" component = {Tutorials} />
-          <Route component={Error}/>
-        </Switch>
-      </div>
+        <div>
+            <Navigation />
+              <Switch>
+                <Route path="/" component = {Home} exact />
+                <Route path="/members" component = {Members} />
+                <Route path="/events" component = {Events} />
+                <Route path="/projects" component = {Projects} />
+                <Route path="/tutorials" component = {Tutorials} />
+                <Route component={Error}/>
+            </Switch>
+        </div>
       </BrowserRouter>
     );
   }
