@@ -1,23 +1,57 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
-import PropTypes from 'prop-types';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap';
 
 class Navigation extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.toggle = this.toggle.bind(this);
+        this.state = { 
+            isOpen: false
+         };
     }
+    toggle() {
+        this.setState({
+          isOpen: !this.state.isOpen
+        });
+      }
     render() { 
         return (
-            <div>
-                <NavLink color="inherit" to="/">Home</NavLink>
-                <NavLink color="inherit" to="/projects">Projects</NavLink>
-                <NavLink color="inherit" to="/events">Events</NavLink>
-                <NavLink color="inherit" to="/tutorials">Tutorials</NavLink>
-                <NavLink color="inherit" to="/members">Members</NavLink>
-            </div>
-          );
+        <div>
+            <Navbar color="light" light expand="md">
+            <NavbarBrand>
+                <NavLink to="/">NITK_OSG</NavLink>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink className="m-3" to="/projects">Projects</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="m-3" to="/events">Events</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="m-3" to="/members">Members</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="m-3" to="/tutorials">Tutorials</NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
+        );
     }
 }
  

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { Jumbotron, Container, Row, Col  } from 'reactstrap';
 
 class Home extends Component {
   constructor(props) {
@@ -8,7 +8,20 @@ class Home extends Component {
   }
   render() { 
     return ( 
-      <div>home</div>
+      <div>
+        <Jumbotron fluid>
+          <Container className="my-md-5" fluid>
+            <Row>
+              <Col sm="12" md="6">
+                Open Source Group
+              </Col>
+              <Col className="d-none d-md-block">
+                Open Source Group
+              </Col>
+            </Row>
+          </Container>
+      </Jumbotron>
+      </div>
      );
   }
 }
