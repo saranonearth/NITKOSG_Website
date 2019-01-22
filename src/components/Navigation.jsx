@@ -28,7 +28,7 @@ class Navigation extends Component {
     render() { 
         return (
         <div>
-            <Navbar color="light" light expand="md">
+            <Navbar light expand="md">
             <NavbarBrand>
                 <NavLink to="/">NITK_OSG</NavLink>
             </NavbarBrand>
