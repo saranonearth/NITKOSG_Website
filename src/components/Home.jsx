@@ -44,9 +44,9 @@ class Home extends Component {
       
         </div>
 
-             <div class="container w-80 w-sm-80">
+             <div class="container w-80 w-sm-80 flex-column-reverse flex-lg-row">
           <div class="row">
-            <div class="col-12 col-md-6 col-sm-12">
+            <div class="col-12 col-md-6 col-sm-12 ">
                       <Media body>
                         <Media className="text-center mt-5 display-4 "heading>
                          What do we do?
@@ -54,7 +54,8 @@ class Home extends Component {
                         <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
                         </Media>
             </div>
-             <div class="col-12 col-md-6 col-sm-12">
+             <div class="col-12 col-md-6 col-sm-12
+              ">
                        <Media>
                         <Media left href="./">
                         <Media className="img-fluid mt-5" object src={Pic2} alt="Who are we image" />

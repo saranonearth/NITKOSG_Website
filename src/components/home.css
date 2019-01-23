@@ -25,6 +25,15 @@ div {
 }
 
 
+.container {
+	margin-top: 150px;
+	
+}
+
+footer {
+	margin-top: 100px;
+}
+
 @media (max-width: 740px){
 	.home {
 		height: 95vh;
@@ -38,15 +47,11 @@ div {
 		font-size: 1.5em;
 		
 }
-
+.container{
+		margin-top: 100px; 
+		background-color:#F4F9FF ;
+}
 
 
 }
-
-.container {
-	margin-top: 170px;
-	
-
-}
-
 
