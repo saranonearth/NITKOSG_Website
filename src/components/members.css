@@ -1,0 +1,42 @@
+.card {
+	border:none;
+	margin: 20px;
+}
+
+.card-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	color: #9872EC;
+}
+.card-subtitle {
+	color: #A9B8C6;
+}
+
+.container {
+	margin-top: 10px;
+	margin-bottom:100px;
+	background-color: white;
+}
+.card img {
+	border-radius: 50%;
+	border: solid #9872EC 1px;
+	padding: 3px;
+
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 50px;
+
+	color: #9872EC;
+
+}
+
+
+footer {
+	margin-top: 100px;
+	background-color: #9872EC;
+}

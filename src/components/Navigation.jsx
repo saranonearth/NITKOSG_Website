@@ -25,27 +25,32 @@ class Navigation extends Component {
           isOpen: !this.state.isOpen
         });
       }
+    
+
+
     render() { 
+    
+    
         return (
         <div>
-            <Navbar light expand="md">
+            <Navbar  style={{backgroundColor: '#9872EC'}}light expand="md">
             <NavbarBrand>
-                <NavLink to="/">NITK_OSG</NavLink>
+                <NavLink to="/" className=" text-white" style={{fontWeight:'600',fontFamily:'Montserrat'}}>NITKOSG</NavLink>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="m-3" to="/projects">Projects</NavLink>
+                            <NavLink className="m-3 text-white" to="/projects">Projects</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="m-3" to="/events">Events</NavLink>
+                            <NavLink className="m-3 text-white" to="/events">Events</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="m-3" to="/members">Members</NavLink>
+                            <NavLink className="m-3  text-white" to="/members">Members</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="m-3" to="/tutorials">Tutorials</NavLink>
+                            <NavLink className="m-3  text-white" to="/tutorials">Tutorials</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

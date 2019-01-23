@@ -1,13 +1,39 @@
 import React, { Component } from 'react';
+import {Card, Button, CardTitle, CardText, Row, Col, Container} from 'reactstrap';
+import './members.css'
+import Membercard from './Membercard';
+import {person} from './Memberslist'; 
+
 
 class Members extends Component {
     constructor(props) {
-        super(props);
-        this.state = {  }
-    }
+    	super(props);
+			this.state = {
+				person: person  
+			}
+        }
+
     render() { 
+		let memCards = this.state.person.map(mem =>{
+			return (
+					<Col sm="3" md="3" lg="3">
+						<Membercard mem={mem}/>
+					</Col>
+				)
+		})
         return (
-            <div>Members</div>
+        	<div>
+      	 	<Container>
+				<h1 className="text-center display-4"> Members </h1>
+      	 		<Row>
+      	 			{memCards}
+      	 		</Row>
+      	 		
+      	 	</Container>
+      	 	<footer className="p-2  mt-4 text-white ">
+        			<p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
+     		</footer>
+            </div>
           );
     }
 }
