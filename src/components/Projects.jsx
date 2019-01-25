@@ -105,7 +105,9 @@ class Projects extends Component {
 
     </CardColumns>
             </Container>
-                
+                <footer className="p-2  mt-4 text-white ">
+              <p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
+        </footer>
             </div>
           );
     }

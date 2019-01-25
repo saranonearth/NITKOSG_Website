@@ -1,0 +1,22 @@
+
+.container {
+	text-align: center;
+}
+
+
+
+.title {
+	color: #B397FF;
+	font-size: 10em;
+	font-weight: 900;
+
+}
+
+.btn-secondary{
+	background-color: #B397FF;
+	border-color: #9872EC;
+	border-radius: none;
+}
+.btn:active {
+	background-color: #9872EC;
+}
