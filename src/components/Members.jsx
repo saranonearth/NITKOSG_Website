@@ -24,7 +24,8 @@ class Members extends Component {
         return (
         	<div>
       	 	<Container>
-				<h1 className="text-center display-4"> Members </h1>
+				<h1 className="text-center" style={{fontSize:'10vw'}}> Members </h1>
+              {/*Members list*/}
       	 		<Row>
       	 			{memCards}
       	 		</Row>

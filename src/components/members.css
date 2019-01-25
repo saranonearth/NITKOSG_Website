@@ -19,7 +19,7 @@
 	margin-bottom:100px;
 	background-color: white;
 }
-.card img {
+#person-img {
 	border-radius: 50%;
 	border: solid #9872EC 1px;
 	padding: 3px;
@@ -30,7 +30,6 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	margin-top: 50px;
-
 	color: #9872EC;
 
 }

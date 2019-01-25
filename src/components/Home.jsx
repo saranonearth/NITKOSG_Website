@@ -20,8 +20,8 @@ class Home extends Component {
                  {/* Header */}
       <div className=" md-block" class="home">     
           <Jumbotron >
-          <h1 className="display-1">NITKOSG</h1>
-          <p className="lead">Open-source Group of NIT Kurukshetra.</p>
+          <h1 style={{fontSize:'8vw'}}>NITKOSG</h1>
+          <p className="lead" style={{fontSize:'2.3vw'}}>Open-source Group of NIT Kurukshetra.</p>
            </Jumbotron>
       </div>
 
@@ -57,7 +57,7 @@ class Home extends Component {
            <Row>
                 <Col sm="12" md="6">
                    <Media body>
-                        <Media className="text-center mt-5 media-text " heading>
+                        <Media className="text-center mt-5 media-text "  heading>
                          What do we do?
                         </Media>
                         <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>

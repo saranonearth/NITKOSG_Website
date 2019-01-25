@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import {Container,Row,Col, Media} from 'reactstrap';
+import Pic3 from './Images/pic3.png';
+import Pic4 from './Images/pic4.png'
 class Events extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +9,58 @@ class Events extends Component {
     }
     render() { 
         return (
-            <div>Events</div>
+            <div>
+            	<Container>
+                <h1 className="text-center" style={{fontSize:'10vw'}}>Events</h1>
+                   <Row>
+             <Col sm="12" md="6">
+                <Media>
+                        <Media left href="./Events">
+                        <Media className="img-fluid mt-5" object src={Pic3} alt="Who are we image" />
+                        </Media>
+                      
+                  </Media>
+             </Col>
+
+              <Col  sm="12" md="6" mt="0">
+                 <Media body>
+                        <Media className="text-center mt-5 media-text " heading>
+                         GSOC Introduction Workshop
+                         <p style={{fontSize:'20px'}}>Date | Time </p>
+                        </Media>
+                        <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                    </Media>
+              </Col>
+            </Row>
+                <Row>
+
+                 <Col  sm="12" md="6" mt="0">
+                 <Media body>
+                        <Media className="text-center mt-5 media-text reverse " heading>
+                         Github Workshop
+                         <p style={{fontSize:'20px'}}>Date | Time </p>
+                        </Media>
+                        <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                    </Media>
+              </Col>
+
+             <Col sm="12" md="6">
+                <Media>
+                        <Media left href="./Events">
+                        <Media className="img-fluid mt-5 reverse" object src={Pic4} alt="Who are we image" />
+                        </Media>
+                      
+                  </Media>
+             </Col>
+
+             
+            </Row>
+                     
+                </Container>
+                <footer className="p-2  mt-4 text-white ">
+                    <p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
+            </footer>
+            </div>
           );
     }
 }

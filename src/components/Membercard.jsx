@@ -13,7 +13,7 @@ class Membercard extends React.Component {
 					<div>
 					      
 					        <Card body className=" text-center">
-					          <img width="100%"  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=picture&w=300&h=300" alt="Card image cap" />
+					          <img width="100%"  id="person-img" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=picture&w=300&h=300" alt="Card image cap" />
 					          <CardTitle className="">{this.props.mem.name}</CardTitle>
 					          <CardSubtitle>{this.props.mem.description}</CardSubtitle>
 					        </Card>
