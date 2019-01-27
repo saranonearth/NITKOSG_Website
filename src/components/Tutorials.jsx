@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Tutorialcard from './Tutorialcard';
-import {Col,Row,Container} from 'reactstrap';
+import {Col,
+		Row,
+		Container,
+		CardColumns
+		} from 'reactstrap';
+import Media from 'react-media';
 import {Tutorialslist} from './Tutorialslist';
 import './Tutorials.css';
 class Tutorials extends Component {
@@ -16,20 +21,44 @@ class Tutorials extends Component {
     render() { 
 		const tut = this.state.tutorial.map(tut=>{
 			return(
-				<Col className="offset-*" sm="6" md="6" lg="6">
+				
+					
 					<Tutorialcard tut={tut}/>
-				</Col>
+				
+					
+				
 				)
 		});
 
         return (
 			<div>
-				<Container>
+			
 					<h1 className="text-center" style={{fontSize:'10vw'}}>Tutorials</h1>
-				<Row>	
-               	{tut}       {/*Tutorials List*/}
-               </Row>
-				</Container>
+						
+							  <Media query={{ maxWidth: 600 }}>
+					          {matches =>
+					            matches ? (
+              						<Container style={{marginLeft:'1.5rem'}}>
+							<CardColumns >
+										{tut}
+							</CardColumns>   
+									</Container>                              
+           					 ) : (
+              
+									<Container >
+							<CardColumns >
+										{tut}
+							</CardColumns>   
+									</Container> 
+          								  )
+        							  }
+      							  </Media>
+						
+						
+						
+						
+							
+					
 			<footer className="p-2  mt-4 text-white ">
         			<p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
      		</footer>

@@ -42,6 +42,7 @@ div {
 	font-weight: 600;
 	font-size: 3em;
 	
+	
 }
 
 	/*Footer*/
@@ -78,6 +79,7 @@ p {
 }
 .media-text {
 	font-size: 2em;
+	padding-top: 0;
 }
 }
 

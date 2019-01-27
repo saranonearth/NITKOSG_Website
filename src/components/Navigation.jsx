@@ -10,8 +10,8 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem } from 'reactstrap';
-
+    DropdownItem, Button } from 'reactstrap';
+import './Navigation.css'
 class Navigation extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +30,7 @@ class Navigation extends Component {
 
     render() { 
     
-    
+
         return (
         <div>
             <Navbar  style={{backgroundColor: '#9872EC'}}light expand="md">
@@ -51,6 +51,9 @@ class Navigation extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink className="m-3  text-white" to="/tutorials">Tutorials</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <Button href="https://nitkosg.slack.com" size="sm" style={{padding:'0.1rem 0.5rem',backgroundColor:'#B397FF',borderColor:'#ECE5FF'}} active>Join Slack</Button>
                         </NavItem>
                     </Nav>
                 </Collapse>

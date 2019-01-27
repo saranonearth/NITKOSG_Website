@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
-import { Card, Button, CardImg, CardTitle,Container, CardText, CardColumns,
- CardSubtitle, CardBody } from 'reactstrap';
+import { Card,
+         Button,
+         CardImg,
+         CardTitle,
+         Container,
+         CardText,
+         CardColumns,
+         CardSubtitle,
+         CardBody 
+         } from 'reactstrap';
 
 class Projects extends Component {
     constructor(props) {
