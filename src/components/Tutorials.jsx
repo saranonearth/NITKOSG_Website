@@ -8,6 +8,7 @@ import {Col,
 import Media from 'react-media';
 import {Tutorialslist} from './Tutorialslist';
 import './Tutorials.css';
+import WOW from "wowjs";
 class Tutorials extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,10 @@ class Tutorials extends Component {
 			tutorial: Tutorialslist
          }
     }
-
+    componentDidMount() {
+    const wow = new WOW.WOW();
+    wow.init();
+  }
 	
 
     render() { 
@@ -23,7 +27,10 @@ class Tutorials extends Component {
 			return(
 				
 					
-					<Tutorialcard tut={tut}/>
+							
+								<Tutorialcard  tut={tut}/>
+					
+					
 				
 					
 				
@@ -31,22 +38,23 @@ class Tutorials extends Component {
 		});
 
         return (
-			<div>
+			<div >
 			
-					<h1 className="text-center" style={{fontSize:'10vw'}}>Tutorials</h1>
+					<h1 className="text-center wow pulse" style={{fontSize:'10vw'}}>Tutorials</h1>
 						
-							  <Media query={{ maxWidth: 600 }}>
+							  <Media query={{ maxWidth: 700 }}>
 					          {matches =>
 					            matches ? (
               						<Container style={{marginLeft:'1.5rem'}}>
-							<CardColumns >
+							<CardColumns className="wow fadeIn" >
+
 										{tut}
 							</CardColumns>   
 									</Container>                              
            					 ) : (
               
 									<Container >
-							<CardColumns >
+							<CardColumns  className="wow fadeIn">
 										{tut}
 							</CardColumns>   
 									</Container> 

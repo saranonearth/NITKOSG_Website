@@ -9,20 +9,26 @@ import { Card,
          CardSubtitle,
          CardBody 
          } from 'reactstrap';
+import WOW from "wowjs";
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
+    componentDidMount() {
+    const wow = new WOW.WOW();        
+    wow.init();
+  }
+
     render() { 
         return (
             <div>
-            <h1 className="text-center" style={{fontSize:'10vw'}}>Projects</h1>
+            <h1 className="text-center wow pulse" style={{fontSize:'10vw'}}>Projects</h1>
             <Container>
-    <CardColumns>
+    <CardColumns >
 
-           <Card>
+           <Card className="wow slideInUp">
         <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
         <CardBody>
           <CardTitle>Project Title</CardTitle>
@@ -33,12 +39,12 @@ class Projects extends Component {
       </Card>
 
 
-      <Card>
+      <Card className="wow slideInUp">
         <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
       </Card>
 
 
-      <Card>
+      <Card className="wow slideInUp" >
         <CardBody>
           <CardTitle>Project Title</CardTitle>
           <CardSubtitle>By XYZ</CardSubtitle>
@@ -48,7 +54,7 @@ class Projects extends Component {
       </Card>
 
 
-      <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+      <Card className="wow slideInUp" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
         <CardTitle>Getting started MANUAL</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>View on Github</Button>
@@ -56,7 +62,7 @@ class Projects extends Component {
    
     
 
-      <Card>
+      <Card className="wow slideInUp">
         <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
         <CardBody>
           <CardTitle>Project 3</CardTitle>
@@ -65,20 +71,20 @@ class Projects extends Component {
           <Button>View on Github</Button>
         </CardBody>
       </Card>
-               <Card body inverse >
+               <Card body inverse className="wow slideInUp" >
         <CardTitle>Project Title</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button color="secondary">View on Github</Button>
       </Card>
 
-      <Card body inverse >
+      <Card body inverse className="wow slideInUp" >
         <CardTitle>Project Title</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button color="secondary">View on Github</Button>
       </Card>
 
 
-        <Card>
+        <Card className="wow slideInUp">
         <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
         <CardBody>
           <CardTitle>Project Tile</CardTitle>
@@ -87,7 +93,7 @@ class Projects extends Component {
           <Button>View on Github</Button>
         </CardBody>
       </Card>
-         <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+         <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className="wow slideInUp">
         <CardTitle> Project Title</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>View on Github</Button>
@@ -95,7 +101,7 @@ class Projects extends Component {
    
     
 
-      <Card>
+      <Card className="wow slideInUp">
         <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
         <CardBody>
           <CardTitle>Project Title</CardTitle>

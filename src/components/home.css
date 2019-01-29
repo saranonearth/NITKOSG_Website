@@ -2,6 +2,7 @@ div {
 	overflow-x: hidden ;
 }
 
+
 .home {
 	background-image: url(./hero.jpg);
 	height: 92.6vh;
@@ -45,6 +46,15 @@ div {
 	
 }
 
+.Navigation {
+	overflow: hidden !important;
+}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #9671EF;
+}
+
 	/*Footer*/
 
 footer {
@@ -82,4 +92,7 @@ p {
 	padding-top: 0;
 }
 }
+
+
+
 

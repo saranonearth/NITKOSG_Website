@@ -5,13 +5,16 @@ import Pic1 from './Images/pic1.png';
 import Pic2 from './Images/pic2.png';
 import './home.css'
 import {SectionsContainer,Section,Footer} from 'react-fullpage';
-
+import WOW from "wowjs";
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {  }
   }
-
+    componentDidMount() {
+    const wow = new WOW.WOW();        
+    wow.init();
+  }
 
 
   render() { 
@@ -21,35 +24,35 @@ class Home extends Component {
       sectionClassName:     'section',
       anchors:              ['sectionOne', 'sectionTwo', 'sectionThree'],
       scrollBar:            false,
-      navigation:           false,
+      navigation:           true,
       verticalAlign:        false,
       sectionPaddingTop:    '0px',
-      sectionPaddingBottom: '0px',
+      sectionPaddingBottom: '50px',
       responsiveSlides:      true,
-      arrowNavigation:      true
+      arrowNavigation:      true,
     };
 
 
 
     return ( 
-      <div>
+      <div className="fp-auto-height-responsive">
 
            
-          <SectionsContainer {...options}>
+          <SectionsContainer   {...options}>
               <Section >
                         {/* Header */}
                         <div className=" md-block" class="home">     
                             <Jumbotron >
-                            <h1 style={{fontSize:'8vw'}}>NITKOSG</h1>
-                            <p className="lead" style={{fontSize:'2.3vw'}}>Open-source Group of NIT Kurukshetra.</p>
+                            <h1 style={{fontSize:'8vw'}} className="wow pulse">NITKOSG</h1>
+                            <p className="lead wow fadeIn" style={{fontSize:'2.3vw'}}>Open-source Group of NIT Kurukshetra.</p>
                              </Jumbotron>
                         </div>
 
               </Section>
 
-              <Section responsiveSlides="true"  scrollBar="false"> 
+              <Section > 
                 <Container>
-                  <Row>
+                  <Row >
                    <Col sm="12" md="6">
                       <Media>
                               <Media left href="./">
@@ -61,7 +64,7 @@ class Home extends Component {
 
                     <Col  sm="12" md="6" mt="0">
                        <Media body>
-                              <Media className="text-center mt-5 media-text " heading>
+                              <Media className="text-center mt-5 media-text" heading>
                                Who are we? 
                               </Media>
                               <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
@@ -71,9 +74,10 @@ class Home extends Component {
                 </Container>
               </Section>
 
-              <Section responsiveSlides="true"  scrollBar="false" >
+              <Section >
                  <Container>
                        <Row>
+                       
                             <Col sm="12" md="6">
                                <Media body>
                                     <Media className="text-center mt-5 media-text "  heading>
@@ -91,29 +95,16 @@ class Home extends Component {
                               </Media>
                          </Col>
                      </Row>
-        </Container>
-
+                  </Container>
+           
               </Section>
           </SectionsContainer>
+               <Footer className="p-2 wt-2 text-white ">
+                          <p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
+                </Footer>
 
-
-
-                
-
-
-                
-
-       
-                      
-                      
-      
-       
-
-         <Footer className="p-2  mt-4 text-white ">
-        <p className="text-center text-white mb-0 pb-0"> NITKOSG &copy; 2019 </p>
-      </Footer>
       </div>  
-
+        
      
      );
   }

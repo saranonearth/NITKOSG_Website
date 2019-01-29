@@ -18,6 +18,7 @@
 	margin-top: 10px;
 	margin-bottom:100px;
 	background-color: white;
+
 }
 #person-img {
 	border-radius: 50%;
@@ -38,4 +39,8 @@ h1 {
 footer {
 	margin-top: 100px;
 	background-color: #9872EC;
+}
+
+.row {
+	padding: 40px;
 }
