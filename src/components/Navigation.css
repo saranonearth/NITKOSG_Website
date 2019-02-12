@@ -20,7 +20,8 @@ font-style: normal;
 }
 
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 750px) {
  	.navbar-collapse a {
 	font-size: 1.3em;
 	font-weight: 600;
@@ -30,10 +31,23 @@ font-style: normal;
 		margin-bottom: 5px;
 	}
 
-`
+
 	.btn-secondary {
 		margin-left: 10px;
 	}
+
+	.navbar-collapse{
+	height: 100vh;
+	font-size: 1.5em;
+
+}
+.navbar-nav {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
 
 
 }
