@@ -3,11 +3,9 @@
 	text-align: center;
 }
 
-
-
 .title {
 	color: #B397FF;
-	font-size: 10em;
+	font-size: 10vw;
 	font-weight: 900;
 
 }
@@ -19,4 +17,13 @@
 }
 .btn:active {
 	background-color: #9872EC;
+}
+
+@media screen and (max-width: 800px){
+	.title {
+
+	font-size: 20vw;
+	
+
+}
 }

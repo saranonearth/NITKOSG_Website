@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col, Media  } from 'reactstrap';
-import Hero from './hero.jpg';
 import Pic1 from './Images/pic1.png';
 import Pic2 from './Images/pic2.png';
 import './home.css'
@@ -44,7 +43,7 @@ class Home extends Component {
                         <div className=" md-block" class="home">     
                             <Jumbotron >
                             <h1 style={{fontSize:'8vw'}} className="wow pulse">NITKOSG</h1>
-                            <p className="lead wow fadeIn" style={{fontSize:'2.3vw'}}>Open-source Group of NIT Kurukshetra.</p>
+                            <p className="lead wow fadeIn text-title" style={{fontSize:'2.3vw'}}>Open-source Group of NIT Kurukshetra.</p>
                              </Jumbotron>
                         </div>
 
@@ -67,7 +66,7 @@ class Home extends Component {
                               <Media className="text-center mt-5 media-text" heading>
                                Who are we? 
                               </Media>
-                              <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                              <p className="md-block text-center block-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
                           </Media>
                     </Col>
                   </Row>
@@ -83,7 +82,7 @@ class Home extends Component {
                                     <Media className="text-center mt-5 media-text "  heading>
                                      What do we do?
                                     </Media>
-                                    <p className="md-block text-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                                    <p className="md-block text-center block-text" >Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
                                     </Media>
                             </Col>
                             <Col sm="12" md="6">

@@ -35,7 +35,7 @@ class Navigation extends Component {
         <div>
             <Navbar  style={{backgroundColor: '#9872EC'}}light expand="md">
             <NavbarBrand>
-                <NavLink to="/" className=" text-white" style={{fontWeight:'600',fontFamily:'Montserrat',textDecoration:'none'}}>NITKOSG</NavLink>
+                <NavLink to="/" className=" text-white" style={{textDecoration:'none'}}>NITKOSG</NavLink>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
