@@ -5,20 +5,17 @@ import Pic2 from './Images/pic2.png';
 import './home.css';
 import WOW from 'wowjs';
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   componentDidMount() {
-    const wow = new WOW.WOW();
+    const wow = new WOW.WOW({
+      live: false
+    });
     wow.init();
   }
 
   render() {
     return (
       <div className='fp-auto-height-responsive'>
-        {/* Header */}
-        <div className=' md-block' className='home'>
+        <div className='md-block home'>
           <Jumbotron>
             <h1 style={{ fontSize: '8vw' }} className='wow pulse'>
               NITKOSG
@@ -57,7 +54,7 @@ class Home extends Component {
                   scelerisque ante sollicitudin commodo. Cras purus odio,
                   vestibulum in vulputate at, tempus viverra turpis. Fusce
                   condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                  congue felis in faucibus.{' '}
+                  congue felis in faucibus.
                 </p>
               </Media>
             </Col>
@@ -75,7 +72,7 @@ class Home extends Component {
                   scelerisque ante sollicitudin commodo. Cras purus odio,
                   vestibulum in vulputate at, tempus viverra turpis. Fusce
                   condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                  congue felis in faucibus.{' '}
+                  congue felis in faucibus.
                 </p>
               </Media>
             </Col>
@@ -86,7 +83,7 @@ class Home extends Component {
                     className='img-fluid mt-5'
                     object
                     src={Pic2}
-                    alt='Who are we image'
+                    alt='whoWeAre-img'
                   />
                 </Media>
               </Media>
@@ -95,8 +92,7 @@ class Home extends Component {
         </Container>
         <footer className='p-2  mt-4 text-white '>
           <p className='text-center text-white mb-0 pb-0'>
-            {' '}
-            NITKOSG &copy; 2019{' '}
+            NITKOSG &copy; 2019
           </p>
         </footer>
       </div>

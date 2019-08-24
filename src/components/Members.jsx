@@ -14,14 +14,16 @@ class Members extends Component {
   }
 
   componentDidMount() {
-    const wow = new WOW.WOW();
+    const wow = new WOW.WOW({
+      live: false
+    });
     wow.init();
   }
 
   render() {
-    let memCards = this.state.person.map(mem => {
+    let memCards = this.state.person.map((mem, index) => {
       return (
-        <Col sm='3' md='3' lg='3' className='wow flipInX'>
+        <Col key={index} sm='3' md='3' lg='3' className='wow flipInX'>
           <Membercard mem={mem} />
         </Col>
       );
@@ -30,16 +32,14 @@ class Members extends Component {
       <div>
         <Container>
           <h1 className='text-center wow pulse' style={{ fontSize: '10vw' }}>
-            {' '}
-            Members{' '}
+            Members
           </h1>
-          {/*Members list*/}
+
           <Row>{memCards}</Row>
         </Container>
         <footer className='p-2  mt-4 text-white '>
           <p className='text-center text-white mb-0 pb-0'>
-            {' '}
-            NITKOSG &copy; 2019{' '}
+            NITKOSG &copy; 2019
           </p>
         </footer>
       </div>

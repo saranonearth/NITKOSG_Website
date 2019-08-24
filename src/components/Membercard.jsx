@@ -2,9 +2,6 @@ import React from 'react';
 import { Card, CardTitle, CardSubtitle } from 'reactstrap';
 
 class Membercard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div>
@@ -13,7 +10,7 @@ class Membercard extends React.Component {
             width='100%'
             id='person-img'
             src='https://placeholdit.imgix.net/~text?txtsize=33&txt=picture&w=300&h=300'
-            alt='Card image cap'
+            alt='member-img'
           />
           <CardTitle className=''>{this.props.mem.name}</CardTitle>
           <CardSubtitle>{this.props.mem.description}</CardSubtitle>

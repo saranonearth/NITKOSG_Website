@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Button
 } from 'reactstrap';
 import './Navigation.css';
@@ -32,53 +27,52 @@ class Navigation extends Component {
     return (
       <div>
         <Navbar style={{ backgroundColor: '#9872EC' }} light expand='md'>
-          <NavbarBrand>
-            <NavLink
-              to='/'
-              className=' text-white'
-              style={{ textDecoration: 'none' }}
-            >
-              NITKOSG
-            </NavLink>
-          </NavbarBrand>
+          <Link
+            to='/'
+            className=' text-white'
+            style={{ textDecoration: 'none' }}
+          >
+            NITKOSG
+          </Link>
+
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink
+                <Link
                   onClick={this.toggle}
                   className='m-3 text-white'
                   to='/projects'
                 >
                   Projects
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink
+                <Link
                   onClick={this.toggle}
                   className='m-3 text-white'
                   to='/events'
                 >
                   Events
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink
+                <Link
                   onClick={this.toggle}
                   className='m-3  text-white'
                   to='/members'
                 >
                   Members
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink
+                <Link
                   onClick={this.toggle}
                   className='m-3  text-white'
                   to='/tutorials'
                 >
                   Tutorials
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
                 <Button
