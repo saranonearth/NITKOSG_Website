@@ -9,7 +9,7 @@ class Membercard extends React.Component {
           <img
             width='100%'
             id='person-img'
-            src='https://placeholdit.imgix.net/~text?txtsize=33&txt=picture&w=300&h=300'
+            src='https://via.placeholder.com/150'
             alt='member-img'
           />
           <CardTitle className=''>{this.props.mem.name}</CardTitle>

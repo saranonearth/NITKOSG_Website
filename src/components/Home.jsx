@@ -16,7 +16,7 @@ class Home extends Component {
     return (
       <div className='fp-auto-height-responsive'>
         <div className='md-block home'>
-          <Jumbotron>
+          <Jumbotron className='wow fadeIn'>
             <h1 style={{ fontSize: '8vw' }} className='wow pulse'>
               NITKOSG
             </h1>
@@ -30,7 +30,7 @@ class Home extends Component {
         </div>
 
         <Container>
-          <Row>
+          <Row className='wow fadeIn'>
             <Col sm='12' md='6'>
               <Media>
                 <Media left href='./'>
@@ -61,7 +61,7 @@ class Home extends Component {
           </Row>
         </Container>
         <Container>
-          <Row>
+          <Row className='wow fadeIn'>
             <Col sm='12' md='6'>
               <Media body>
                 <Media className='text-center mt-5 media-text ' heading>
