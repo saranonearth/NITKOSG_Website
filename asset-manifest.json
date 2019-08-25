@@ -1,7 +1,7 @@
 {
   "main.css": "/NITKOSG_Website/static/css/main.1903c920.chunk.css",
-  "main.js": "/NITKOSG_Website/static/js/main.338961a6.chunk.js",
-  "main.js.map": "/NITKOSG_Website/static/js/main.338961a6.chunk.js.map",
+  "main.js": "/NITKOSG_Website/static/js/main.fa76ba8f.chunk.js",
+  "main.js.map": "/NITKOSG_Website/static/js/main.fa76ba8f.chunk.js.map",
   "static/css/1.7f609f31.chunk.css": "/NITKOSG_Website/static/css/1.7f609f31.chunk.css",
   "static/js/1.1b0fdf10.chunk.js": "/NITKOSG_Website/static/js/1.1b0fdf10.chunk.js",
   "static/js/1.1b0fdf10.chunk.js.map": "/NITKOSG_Website/static/js/1.1b0fdf10.chunk.js.map",
@@ -16,6 +16,6 @@
   "static/css/main.1903c920.chunk.css.map": "/NITKOSG_Website/static/css/main.1903c920.chunk.css.map",
   "static/css/1.7f609f31.chunk.css.map": "/NITKOSG_Website/static/css/1.7f609f31.chunk.css.map",
   "index.html": "/NITKOSG_Website/index.html",
-  "precache-manifest.3dc0da3de2b5d05aa273ab18e262b8f9.js": "/NITKOSG_Website/precache-manifest.3dc0da3de2b5d05aa273ab18e262b8f9.js",
+  "precache-manifest.be8926bbededa3bb114dee4d7d4101d3.js": "/NITKOSG_Website/precache-manifest.be8926bbededa3bb114dee4d7d4101d3.js",
   "service-worker.js": "/NITKOSG_Website/service-worker.js"
 }

@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/media/pic2.53368b29.png"
   },
   {
-    "revision": "338961a6a595799fb079",
+    "revision": "fa76ba8f35894604219c",
     "url": "/NITKOSG_Website/static/css/main.1903c920.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/media/pic1.b6e6ddbd.png"
   },
   {
-    "revision": "338961a6a595799fb079",
-    "url": "/NITKOSG_Website/static/js/main.338961a6.chunk.js"
+    "revision": "fa76ba8f35894604219c",
+    "url": "/NITKOSG_Website/static/js/main.fa76ba8f.chunk.js"
   },
   {
     "revision": "8650311e51c0b2aa170773c8d0719f2b",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/css/1.7f609f31.chunk.css"
   },
   {
-    "revision": "085c3e6144e39d134b11edbd7a727500",
+    "revision": "7e271d095608d608d47071c4342c11d1",
     "url": "/NITKOSG_Website/index.html"
   }
 ];
