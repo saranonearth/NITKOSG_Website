@@ -1,13 +1,13 @@
 @font-face {
-font-family: 'Sofia Pro Semibold';
-src: url('../components/SofiaProSemiBold.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+	font-family: 'Sofia Pro Semibold';
+	src: url('../components/SofiaProSemiBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
 div {
-	overflow-x: hidden ;
+	overflow-x: hidden;
 }
 
 
@@ -18,29 +18,31 @@ div {
 	width: 100%;
 	background-size: cover;
 	background-position: center;
-	
+
 }
 
 /*Main container div of all the containers*/
 .container {
 	margin-top: 150px;
 
-	
+
 }
 
 
 .jumbotron {
-	background:none; 
+	background: none;
 	margin-left: 20px;
 	color: #9671EF;
 
 }
+
 .jumbotron h1 {
 	margin-top: 100px;
 	font-family: 'Sofia Pro Semibold', sans-serif;
 	font-weight: 700;
 
 }
+
 .jumbotron p {
 
 	color: #A9B8C6;
@@ -52,8 +54,8 @@ div {
 	font-weight: 600;
 	font-size: 3em;
 
-	
-	
+
+
 }
 
 .block-text {
@@ -65,52 +67,55 @@ div {
 }
 
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: #9671EF;
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: #9671EF;
 }
 
-	/*Footer*/
+
+/*Footer*/
 
 footer {
-	margin-top: 100px;
+	position: absolute;
 	background-color: #9872EC;
 }
 
 p {
 	color: #A4B7C6;
-	
+
 }
+
 
 
 /* Media tag */
 
-@media (max-width: 740px){
+@media (max-width: 740px) {
 	.home {
 		height: 95vh;
 
 	}
-	.jumbotron h1{
+
+	.jumbotron h1 {
 		font-size: 3em !important;
 		margin-top: 20px;
-}
-.jumbotron p{
+	}
+
+	.jumbotron p {
 		font-size: 1.5em !important;
-		
-}
-.block-text {
-	font-size: 1.1em;
-}
 
-.container{
-		margin-top: 100px; 
-		background-color:#F4F9FF ;
+	}
+
+	.block-text {
+		font-size: 1.1em;
+	}
+
+	.container {
+		margin-top: 100px;
+		background-color: #F4F9FF;
+	}
+
+	.media-text {
+		font-size: 2em;
+		padding-top: 0;
+	}
 }
-.media-text {
-	font-size: 2em;
-	padding-top: 0;
-}
-}
-
-
-
-

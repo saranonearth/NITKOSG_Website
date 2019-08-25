@@ -35,7 +35,7 @@ class Home extends Component {
               <Media>
                 <Media left href='./'>
                   <Media
-                    className='img-fluid mt-5'
+                    className='img-fluid mt-5 images-animation'
                     object
                     src={Pic1}
                     alt='Who are we image'
