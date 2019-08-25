@@ -1,4 +1,3 @@
-
 .container {
 	text-align: center;
 }
@@ -10,20 +9,25 @@
 
 }
 
-.btn-secondary{
+.btn-secondary {
 	background-color: #B397FF;
 	border-color: #9872EC;
 	border-radius: none;
 }
+
 .btn:active {
 	background-color: #9872EC;
 }
 
-@media screen and (max-width: 800px){
+.footer {
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
 	.title {
 
-	font-size: 20vw;
-	
+		font-size: 20vw;
 
-}
+
+	}
 }

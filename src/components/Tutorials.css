@@ -1,7 +1,7 @@
-
 .card-link {
-	color : #9872EC;
-	font-family: 'Sofia Pro Semibold', sans-serif;;
+	color: #9872EC;
+	font-family: 'Sofia Pro Semibold', sans-serif;
+	;
 	font-size: 1.5em;
 }
 
@@ -10,3 +10,6 @@ h1 {
 
 }
 
+.footer {
+	width: 100%;
+}

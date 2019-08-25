@@ -44,7 +44,7 @@ class Tutorials extends Component {
           }
         </Media>
 
-        <footer className='p-2  mt-4 text-white '>
+        <footer className='p-2 footer  mt-4 text-white '>
           <p className='text-center text-white mb-0 pb-0'>
             {' '}
             NITKOSG &copy; 2019{' '}
