@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/NITKOSG_Website/precache-manifest.be8926bbededa3bb114dee4d7d4101d3.js"
+  "/NITKOSG_Website/precache-manifest.f0246e150ddebdfefa621e44a74d0fd1.js"
 );
 
 workbox.clientsClaim();

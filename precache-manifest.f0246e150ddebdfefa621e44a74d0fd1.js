@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/media/pic2.53368b29.png"
   },
   {
-    "revision": "fa76ba8f35894604219c",
-    "url": "/NITKOSG_Website/static/css/main.1903c920.chunk.css"
+    "revision": "828bfbf5dd73fb371fcb",
+    "url": "/NITKOSG_Website/static/css/main.5701a1f7.chunk.css"
   },
   {
     "revision": "fe5aeef0b75ebada8ef9fb9fe7c07c37",
     "url": "/NITKOSG_Website/static/media/hero.fe5aeef0.jpg"
   },
   {
-    "revision": "1b0fdf10d65e30d60313",
-    "url": "/NITKOSG_Website/static/js/1.1b0fdf10.chunk.js"
+    "revision": "65c179b006321f80531a",
+    "url": "/NITKOSG_Website/static/js/1.65c179b0.chunk.js"
   },
   {
     "revision": "0fedf2a44886bd117a5c",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/media/pic1.b6e6ddbd.png"
   },
   {
-    "revision": "fa76ba8f35894604219c",
-    "url": "/NITKOSG_Website/static/js/main.fa76ba8f.chunk.js"
+    "revision": "828bfbf5dd73fb371fcb",
+    "url": "/NITKOSG_Website/static/js/main.828bfbf5.chunk.js"
   },
   {
     "revision": "8650311e51c0b2aa170773c8d0719f2b",
@@ -40,11 +40,11 @@ self.__precacheManifest = [
     "url": "/NITKOSG_Website/static/media/SofiaProSemiBold.9b3aa1b1.woff"
   },
   {
-    "revision": "1b0fdf10d65e30d60313",
-    "url": "/NITKOSG_Website/static/css/1.7f609f31.chunk.css"
+    "revision": "65c179b006321f80531a",
+    "url": "/NITKOSG_Website/static/css/1.a4122f59.chunk.css"
   },
   {
-    "revision": "7e271d095608d608d47071c4342c11d1",
+    "revision": "153ed5a971475ab0b2d98c14632b48df",
     "url": "/NITKOSG_Website/index.html"
   }
 ];
